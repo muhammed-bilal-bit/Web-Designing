@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENZQUEEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <h1 id="logo">LENZ<span>QUEEN</span>
+        </h1>
+        <ul class="nav-items" id="nav-items">
+            <li>
+                <a href="#" onclick="navClose">Home</a>
+            </li>
+            <li>
+                <a href="#" onclick="navClose">About</a>
+            </li>
+            <li>
+                <a href="#" onclick="navClose">Carrier</a>
+            </li>
+            <li>
+                <a href="#enquiry" onclick="navClose"> Contact</a>
+            </li>
+        </ul>
+        <div class="burger-menu" onclick=" navSlide()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <main class="landing-screen">
+        <h1>Welcome to Our Company</h1>
+        <p>THE BRAND OF WEDDING PHOTOGRAPHY</p>
+        <a href="https://www.youtube.com/@klmalllus" class="get-started">Get Started
+            <i class="fas fa-play"></i>
+
+        </a>
+
+    </main>
+    <section id="enquiry">
+        <h1 class="enquiry-section-header">Enquiry Section</h1>
+        <div class="enquiry-contain">
+            <div class="enquiry">
+                <img class="enquiry-image" src="youtube(1).png" alt="">
+                <h6><a href="https://www.youtube.com/@klmalllus">Youtube</a></h6>
+
+                <p>"Subscribe to our YouTube channel for informative videos and the latest updates."</p>
+
+            </div>
+            <div class="enquiry">
+                <img class="enquiry-image" src="facebook.png" alt="">
+                <h6><a href="https://www.facebook.com/">Facebook</a></h6>
+
+                <p>"Facebook helps businesses get inquiries, connect with customers, and build relationships
+                    easily."
+                </p>
+
+            </div>
+            <div class="enquiry">
+                <img class="enquiry-image" src="instagram.png" alt="">
+                <h6><a href="https://www.instagram.com/">Instagram</a></h6>
+
+                <p>"Check our Instagram profile to explore our products, services, and latest updates."</p>
+
+            </div>
+            <div class="enquiry">
+                <img class="enquiry-image" src="linkedin.png" alt="">
+                <h6><a href="https://www.linkedin.com/">linkedin</a></h6>
+
+                <p>"Connect with us on LinkedIn for business updates, networking, and professional insights."
+                </p>
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <footer id="footer">
+        <h1>THANK YOU!</h1>
+        <p>
+            "At Lenz Queen Photography, we capture the rare, timeless moments of your wedding day with an artistic
+            touch
+            that tells your story."
+        </p>
+    </footer>
+
+</body>
+
+<script>
+    function navSlide() {
+        var navItems = document.getElementById("nav-items")
+        navItems.classList.toggle("nav-items--active")
+
+    }
+    function navClose() {
+        var navActive = document.getElementsByClassName("nav-items--active")
+        if (navActive[0]) {
+            navActive[0].classList.toggle("nav-items--active")
+
+
+        }
+    }
+
+</script>
+
+
+
+</html>
